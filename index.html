@@ -4,160 +4,198 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Vitae - Ibrahim KAKAEV</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Intégration de Bootstrap 5 via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; }
+        .profile-img { width: 120px; height: 120px; object-fit: cover; }
+        .section-title { color: #0d6efd; border-bottom: 2px solid #e9ecef; padding-bottom: 0.5rem; margin-bottom: 1rem; font-size: 1.5rem; font-weight: bold; }
+    </style>
 </head>
-<body>
+<body class="text-dark py-5">
 
-    <!-- EN-TÊTE -->
-    <header>
-        <div class="header-content">
-            <img src="img/profile-pic.png" alt="Photo de profil de Ibrahim Kakaev">
-            <div class="header-text">
-                <p>Curriculum Vitae</p>
-                <h1>Ibrahim KAKAEV[cite: 1, 2, 3]</h1>
-                <p>Développeur Full Stack[cite: 1] / Web[cite: 2] / Logiciel[cite: 3]</p>
+    <div class="container">
+        <!-- EN-TÊTE -->
+        <header class="card shadow-sm border-0 mb-4">
+            <div class="card-body d-flex flex-column flex-md-row align-items-center justify-content-between p-4">
+                <div class="d-flex flex-column flex-md-row align-items-center gap-4 text-center text-md-start">
+                    <img src="img/profile-pic.png" alt="Photo de profil de Ibrahim Kakaev" class="profile-img rounded-circle shadow-sm">
+                    <div>
+                        <p class="text-muted text-uppercase mb-1 small fw-bold">Curriculum Vitae</p>
+                        <h1 class="mb-1 display-6 fw-bold">Ibrahim KAKAEV[cite: 1, 2, 3]</h1>
+                        <p class="lead mb-2">Développeur Full Stack[cite: 1] / Web[cite: 2] / Logiciel[cite: 3]</p>
 
-                <div class="contact-info">
-                    <span>Albi / Avignon, France[cite: 1, 2, 3]</span>
-                    <span>Permis B[cite: 1, 2, 3], Véhicule personnel[cite: 1, 2, 3]</span>
-                    <a href="mailto:ibrahim.kakaev@gmail.com">ibrahim.kakaev@gmail.com[cite: 1, 2, 3]</a>
-                    <span>06 38 05 40 02[cite: 1, 2, 3]</span>
+                        <div class="d-flex flex-wrap justify-content-center justify-content-md-start gap-3 small text-secondary">
+                            <span>📍 Albi / Avignon, France[cite: 1, 2, 3]</span>
+                            <span>🚗 Permis B[cite: 1, 2, 3], Véhicule personnel[cite: 1, 2, 3]</span>
+                            <a href="mailto:ibrahim.kakaev@gmail.com" class="text-decoration-none text-secondary">✉️ ibrahim.kakaev@gmail.com[cite: 1, 2, 3]</a>
+                            <span>📱 06 38 05 40 02[cite: 1, 2, 3]</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4 mt-md-0">
+                    <a href="data/CV.pdf" download class="btn btn-primary px-4 py-2 shadow-sm">Télécharger le CV PDF</a>
                 </div>
             </div>
-            <a href="data/CV.pdf" download class="btn-download">Télécharger le CV PDF</a>
-        </div>
-    </header>
+        </header>
 
-    <!-- CORPS DU CV -->
-    <main>
-        <!-- Profil -->
-        <section class="intro">
-            <h2>Profil</h2>
-            <p>
-                Étudiant en Master Ingénierie Logicielle (ILSEN) à l'Université d'Avignon, je suis à la recherche d'un stage de 6 mois à partir de septembre 2026.[cite: 1, 2, 3] Passionné par le développement logiciel, j'ai à cœur de monter en compétences en contribuant à des projets innovants en équipe.[cite: 2, 3]
-            </p>
-        </section>
-
-        <section class="cv-body">
-            <!-- COLONNE GAUCHE -->
-            <aside class="sidebar">
-                <article>
-                    <h2>Compétences</h2>
-                    <div class="skill-category">
-                        <h3>Frontend[cite: 1, 2, 3]</h3>
-                        <div class="tags">
-                            <span>TypeScript[cite: 1, 2, 3]</span>
-                            <span>React.js[cite: 1, 2, 3]</span>
-                            <span>Vue.js[cite: 1, 2, 3]</span>
-                            <span>Angular.js[cite: 1, 3]</span>
-                            <span>JavaScript[cite: 2]</span>
-                        </div>
+        <!-- CORPS DU CV -->
+        <main class="row g-4">
+            
+            <!-- COLONNE GAUCHE (Sidebar) -->
+            <aside class="col-lg-4">
+                <!-- Profil -->
+                <section class="card shadow-sm border-0 mb-4">
+                    <div class="card-body p-4">
+                        <h2 class="section-title h4">Profil</h2>
+                        <p class="small mb-0 text-secondary lh-lg">
+                            Étudiant en Master Ingénierie Logicielle (ILSEN) à l'Université d'Avignon, je suis à la recherche d'un stage de 6 mois à partir de septembre 2026.[cite: 1, 2, 3] Passionné par le développement logiciel, j'ai à cœur de monter en compétences en contribuant à des projets innovants en équipe.[cite: 2, 3]
+                        </p>
                     </div>
+                </section>
 
-                    <div class="skill-category">
-                        <h3>Backend[cite: 1, 2, 3]</h3>
-                        <div class="tags">
-                            <span>Node.js[cite: 1, 2, 3]</span>
-                            <span>Express.js[cite: 1, 2, 3]</span>
-                            <span>Python[cite: 1, 2, 3]</span>
-                            <span>Java[cite: 1, 2, 3]</span>
-                            <span>PHP[cite: 2]</span>
+                <article class="card shadow-sm border-0 mb-4">
+                    <div class="card-body p-4">
+                        <h2 class="section-title h4">Compétences</h2>
+                        
+                        <div class="mb-3">
+                            <h3 class="h6 fw-bold text-secondary">Frontend[cite: 1, 2, 3]</h3>
+                            <div>
+                                <span class="badge bg-light text-dark border">TypeScript[cite: 1, 2, 3]</span>
+                                <span class="badge bg-light text-dark border">React.js[cite: 1, 2, 3]</span>
+                                <span class="badge bg-light text-dark border">Vue.js[cite: 1, 2, 3]</span>
+                                <span class="badge bg-light text-dark border">Angular[cite: 1, 3]</span>
+                                <span class="badge bg-light text-dark border">JavaScript[cite: 2]</span>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="skill-category">
-                        <h3>Bases de données[cite: 1, 2, 3]</h3>
-                        <div class="tags">
-                            <span>PostgreSQL[cite: 1, 2, 3]</span>
-                            <span>MySQL[cite: 1, 2, 3]</span>
-                            <span>MongoDB[cite: 1, 2, 3]</span>
-                            <span>SQLite[cite: 1, 2, 3]</span>
+                        <div class="mb-3">
+                            <h3 class="h6 fw-bold text-secondary">Backend & Systèmes[cite: 1, 2, 3]</h3>
+                            <div>
+                                <span class="badge bg-light text-dark border">Node.js[cite: 1, 2, 3]</span>
+                                <span class="badge bg-light text-dark border">Python[cite: 1, 2, 3]</span>
+                                <span class="badge bg-light text-dark border">Java[cite: 1, 2, 3]</span>
+                                <span class="badge bg-light text-dark border">C++</span>
+                                <span class="badge bg-light text-dark border">Rust</span>
+                                <span class="badge bg-light text-dark border">Express.js[cite: 1, 2, 3]</span>
+                                <span class="badge bg-light text-dark border">PHP[cite: 2]</span>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="skill-category">
-                        <h3>DevOps & IA[cite: 1, 2, 3]</h3>
-                        <div class="tags">
-                            <span>Git / GitHub[cite: 1, 2, 3]</span>
-                            <span>Docker[cite: 1, 2, 3]</span>
-                            <span>CI/CD (GitHub Actions)[cite: 1, 2, 3]</span>
-                            <span>Linux[cite: 1, 2]</span>
-                            <span>GitHub Copilot[cite: 1, 2, 3]</span>
-                            <span>Claude Code[cite: 2, 3]</span>
+                        <div class="mb-3">
+                            <h3 class="h6 fw-bold text-secondary">Bases de données & Big Data[cite: 1, 2, 3]</h3>
+                            <div>
+                                <span class="badge bg-light text-dark border">PostgreSQL[cite: 1, 2, 3]</span>
+                                <span class="badge bg-light text-dark border">MySQL[cite: 1, 2, 3]</span>
+                                <span class="badge bg-light text-dark border">MongoDB[cite: 1, 2, 3]</span>
+                                <span class="badge bg-light text-dark border">SQLite[cite: 1, 2, 3]</span>
+                                <span class="badge bg-light text-dark border">Hadoop</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="h6 fw-bold text-secondary">DevOps & IA[cite: 1, 2, 3]</h3>
+                            <div>
+                                <span class="badge bg-light text-dark border">Git / GitHub[cite: 1, 2, 3]</span>
+                                <span class="badge bg-light text-dark border">Docker[cite: 1, 2, 3]</span>
+                                <span class="badge bg-light text-dark border">CI/CD (GitHub Actions)[cite: 1, 2, 3]</span>
+                                <span class="badge bg-light text-dark border">Ubuntu Linux[cite: 1, 2]</span>
+                                <span class="badge bg-light text-dark border">CUDA</span>
+                                <span class="badge bg-light text-dark border">GitHub Copilot[cite: 1, 2, 3]</span>
+                                <span class="badge bg-light text-dark border">Claude Code[cite: 2, 3]</span>
+                            </div>
                         </div>
                     </div>
                 </article>
 
-                <article>
-                    <h2>Formation[cite: 1, 2, 3]</h2>
-                    <div class="education">
-                        <h3>Master Informatique - ILSEN[cite: 1, 2, 3]</h3>
-                        <p>Université d'Avignon[cite: 1, 2, 3] · Depuis 2024[cite: 1, 2, 3]</p>
-                    </div>
-                    <div class="education">
-                        <h3>Licence Informatique[cite: 1, 2, 3]</h3>
-                        <p>INU Champollion, Albi[cite: 1, 2, 3] · 2021-2024[cite: 1, 2, 3]</p>
-                    </div>
-                    <div class="education">
-                        <h3>Baccalauréat[cite: 1, 2, 3]</h3>
-                        <p>Lycée Lapérouse, Albi[cite: 1, 2, 3] · 2019-2021[cite: 1, 2, 3]</p>
-                    </div>
-                    <div class="education">
-                        <h3>BAFA[cite: 1, 2, 3]</h3>
-                        <p>UFCV Toulouse[cite: 1, 3] · 2022[cite: 1, 2, 3]</p>
-                    </div>
-                </article>
-
-                <article>
-                    <h2>Langues & Intérêts</h2>
-                    <ul>
-                        <li><strong>Français</strong> : Langue maternelle[cite: 2, 3]</li>
-                        <li><strong>Anglais</strong> : Niveau B2[cite: 1, 2, 3]</li>
-                    </ul>
-                    <div class="tags">
-                        <span>Automobile[cite: 1]</span>
-                        <span>Randonnée[cite: 1, 2, 3]</span>
-                        <span>Musique[cite: 2, 3]</span>
-                        <span>Automatisation[cite: 2, 3]</span>
+                <article class="card shadow-sm border-0 mb-4">
+                    <div class="card-body p-4">
+                        <h2 class="section-title h4">Formation[cite: 1, 2, 3]</h2>
+                        
+                        <div class="mb-3">
+                            <h3 class="h6 fw-bold mb-1">Master Informatique - ILSEN[cite: 1, 2, 3]</h3>
+                            <p class="small text-muted mb-0">Université d'Avignon[cite: 1, 2, 3] · Depuis 2024[cite: 1, 2, 3]</p>
+                        </div>
+                        <div class="mb-3">
+                            <h3 class="h6 fw-bold mb-1">Licence Informatique[cite: 1, 2, 3]</h3>
+                            <p class="small text-muted mb-0">INU Champollion, Albi[cite: 1, 2, 3] · 2021-2024[cite: 1, 2, 3]</p>
+                        </div>
+                        <div class="mb-3">
+                            <h3 class="h6 fw-bold mb-1">Baccalauréat[cite: 1, 2, 3]</h3>
+                            <p class="small text-muted mb-0">Lycée Lapérouse, Albi[cite: 1, 2, 3] · 2019-2021[cite: 1, 2, 3]</p>
+                        </div>
+                        <div>
+                            <h3 class="h6 fw-bold mb-1">BAFA[cite: 1, 2, 3]</h3>
+                            <p class="small text-muted mb-0">UFCV Toulouse[cite: 1, 3] · 2022[cite: 1, 2, 3]</p>
+                        </div>
                     </div>
                 </article>
             </aside>
 
-            <!-- COLONNE DROITE -->
-            <section class="main-content">
-                <article>
-                    <h2>Expériences professionnelles[cite: 1]</h2>
+            <!-- COLONNE DROITE (Main Content) -->
+            <section class="col-lg-8">
+                <article class="card shadow-sm border-0 h-100">
+                    <div class="card-body p-4">
+                        <h2 class="section-title h4">Expériences professionnelles[cite: 1]</h2>
 
-                    <div class="experience">
-                        <h3>Développeur Full-Stack / Web[cite: 1, 2, 3] · DSI Grand Albigeois[cite: 1, 2, 3]</h3>
-                        <p class="date">2024[cite: 1, 2, 3] · Albi[cite: 1, 2, 3]</p>
-                        <ul>
-                            <li>Développement d'une application de gestion et d'une interface web de recherche[cite: 2, 3].</li>
-                            <li>Conception et gestion de bases de données MySQL[cite: 1, 3].</li>
-                            <li>Extraction et structuration de données à partir de documents scannés[cite: 2].</li>
-                            <li>Élaboration d'un guide interactif avec une approche orientée utilisateur[cite: 1, 3].</li>
-                        </ul>
-                    </div>
+                        <div class="mb-4">
+                            <h3 class="h5 fw-bold mb-1">Développeur Full-Stack / Web[cite: 1, 2, 3] · DSI Grand Albigeois[cite: 1, 2, 3]</h3>
+                            <p class="small text-muted fst-italic mb-2">2024[cite: 1, 2, 3] · Albi[cite: 1, 2, 3]</p>
+                            <ul class="text-secondary small lh-lg">
+                                <li>Développement d'une application de gestion et d'une interface web de recherche[cite: 2, 3].</li>
+                                <li>Conception et gestion de bases de données MySQL[cite: 1, 3].</li>
+                                <li>Extraction et structuration de données à partir de documents scannés[cite: 2].</li>
+                                <li>Élaboration d'un guide interactif avec une approche orientée utilisateur[cite: 1, 3].</li>
+                            </ul>
+                        </div>
 
-                    <hr>
+                        <hr class="text-muted opacity-25 my-4">
 
-                    <div class="experience">
-                        <h3>Animateur Vacataire[cite: 1, 2, 3] · Le Grand Albigeois[cite: 1, 2, 3]</h3>
-                        <p class="date">Depuis 2020[cite: 1, 2, 3] · Albi[cite: 1, 2, 3]</p>
-                        <ul>
-                            <li>Animation d'ateliers ludiques pour adolescents (13-17 ans)[cite: 1, 2, 3].</li>
-                            <li>Création de programmes d'animations variées pour les vacances scolaires[cite: 1, 3].</li>
-                            <li>Organisation d'activités sportives et culturelles[cite: 1, 2, 3].</li>
-                        </ul>
+                        <div class="mb-4">
+                            <h3 class="h5 fw-bold mb-1">Employé Libre-service · Intérim</h3>
+                            <p class="small text-muted fst-italic mb-2">Février 2026 - Mars 2026</p>
+                            <ul class="text-secondary small lh-lg">
+                                <li>Gestion de la mise en rayon et de l'approvisionnement des produits.</li>
+                                <li>Accueil, conseil et orientation de la clientèle en magasin.</li>
+                                <li>Maintien de l'organisation et de la propreté des espaces de vente.</li>
+                            </ul>
+                        </div>
+
+                        <hr class="text-muted opacity-25 my-4">
+
+                        <div class="mb-4">
+                            <h3 class="h5 fw-bold mb-1">Animateur Référent · CROUS</h3>
+                            <p class="small text-muted fst-italic mb-2">Octobre 2024 - Juin 2025</p>
+                            <ul class="text-secondary small lh-lg">
+                                <li>Accompagnement et intégration des étudiants sur les campus.</li>
+                                <li>Planification et gestion d'événements de cohésion.</li>
+                                <li>Suivi administratif et remontée des besoins de la communauté étudiante.</li>
+                            </ul>
+                        </div>
+
+                        <hr class="text-muted opacity-25 my-4">
+
+                        <div class="mb-4">
+                            <h3 class="h5 fw-bold mb-1">Animateur Vacataire[cite: 1, 2, 3] · Le Grand Albigeois[cite: 1, 2, 3]</h3>
+                            <p class="small text-muted fst-italic mb-2">Depuis 2020[cite: 1, 2, 3] · Albi[cite: 1, 2, 3]</p>
+                            <ul class="text-secondary small lh-lg mb-0">
+                                <li>Animation d'ateliers ludiques pour adolescents (13-17 ans)[cite: 1, 2, 3].</li>
+                                <li>Création de programmes d'animations variées pour les vacances scolaires[cite: 1, 3].</li>
+                                <li>Organisation d'activités sportives et culturelles[cite: 1, 2, 3].</li>
+                            </ul>
+                        </div>
                     </div>
                 </article>
             </section>
-        </section>
-    </main>
+        </main>
+    </div>
 
-    <footer>
-        <p>© 2026 — Tous droits réservés. Réalisé par Ibrahim KAKAEV.</p>
+    <!-- PIED DE PAGE -->
+    <footer class="text-center py-4 mt-2">
+        <p class="small text-muted mb-0">© 2026 — Tous droits réservés. Réalisé par Ibrahim KAKAEV.</p>
     </footer>
 
+    <!-- Script Bootstrap optionnel (utile uniquement si tu ajoutes des menus déroulants ou modales plus tard) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
